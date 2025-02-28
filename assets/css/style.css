@@ -1,4 +1,4 @@
-@charset "UTF-8";
+/* @charset "UTF-8";
 
 /* Importation de polices Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=DM+Sans:opsz,wght@9..40,500&family=DM+Sans:ital,opsz,wght@1,9..40,500&display=swap');
@@ -108,62 +108,46 @@ h1 {
 
 /* Grille de mise en page
    ========================================================================== */
-   .ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 2rem;
-}
-.li {
-    display: grid;
-    grid-template-areas: "li7 li1 li1 li4" "li8 li2 li3 li4" "li8 li6 li5 li5";
-    gap: 1rem;
-}
+   li {
+    list-style-type: none;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 0.5rem;
+    }
 .li1 { 
-    grid-area: li1; 
     background-color: var(--color-primary);
     color: white;
-    padding: 1rem;
+    text-align: center;
 }
 .li2 { 
-    grid-area: li2; 
-    background-color: var(--color-secondary);
-    color: white;
-    padding: 1rem;
+    background-color: whitesmoke;
+    text-align: left;
 }
 .li3 { 
-    grid-area: li3; 
-    background-color: var(--color-tertiary);
-    color: white;
-    padding: 1rem;
+    background-color: var(--color-secondary);
+    text-align: left;
 }
 .li4 { 
-    grid-area: li4; 
-    background-color: var(--color-primary);
-    color: white;
-    padding: 1rem;
+    background-color: var(--color-tertiary);
+    text-align: center;
 }
 .li5 { 
-    grid-area: li5; 
-    background-color: var(--color-secondary);
-    color: white;
-    padding: 1rem;
-}
-.li6 { 
-    grid-area: li6; 
-    background-color: var(--color-tertiary);
-    color: white;
-    padding: 1rem;
-}
-.li7 { 
-    grid-area: li7; 
     background-color: var(--color-primary);
     color: white;
-    padding: 1rem;
+    text-align: center;
+}
+.li6 { 
+    background-color: whitesmoke;
+    text-align: left;
+}
+.li7 { 
+    background-color: #f8eee3;
+    text-align: left;
 }
 .li8 { 
-    grid-area: li8; 
-    background-color: var(--color-secondary);
-    color: white;
-    padding: 1rem;
-}  
+    background-color: var(--color-secondary) ;
+    text-align: left;
+}
+
+/* grid-columns: repeat (4*250px) */
+/* grid-rows: repeat (3*300px) */
